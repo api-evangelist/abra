@@ -1,8 +1,14 @@
 aid: abra
 name: Abra
-description: 'Abra is a company surfaced as a portfolio company of pantera-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Abra is a digital asset wealth and treasury management platform founded in 2014 that
+  provides institutional-grade services for high-net-worth individuals, institutions, corporations,
+  and family offices across all 50 US states. Its products include Vault (segregated-account custody
+  built on Fireblocks MPC wallet technology), proprietary Yield strategies on BTC, ETH, SOL and
+  stablecoins, crypto-backed loans up to 50% LTV, and institutional treasury management, OTC
+  execution, staking, and advisory. The company reports $10B+ in transaction volume and $2.5B+ in
+  loans processed, and is backed by Pantera Capital. Abra does not currently publish a public
+  developer API, API documentation, or SDK surface; this profile captures its public identity and
+  probed domain security.'
 url: https://raw.githubusercontent.com/api-evangelist/abra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,30 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://www.abra.com/wp-content/themes/abra-2025/images/abra_logo.svg
 tags:
 - Company
 - Crypto
+- Digital Assets
+- Wealth Management
+- Custody
+- Lending
+- Treasury Management
+- Institutional
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/abra-domain-security.yml
 - type: Website
   url: https://www.abra.com/
+- type: SignUp
+  url: https://prime.abra.com/register
+- type: Support
+  url: https://support.abra.com/hc/en-us
+- type: Blog
+  url: https://www.abra.com/news/
+- type: TermsOfService
+  url: https://www.abra.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.abra.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
